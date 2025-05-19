@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New ES6/SCSS Project</title>
-</head>
-<body>
-  <div id="banners">
-    <div class="banner">
-      <h1>Welcome to the Used Car Finder</h1>
-      <p>Find your perfect used car with ease!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Match Game</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Card Match</h1>
+      <p>Use the two attempts you have to find the two matching pairs of cards.</p>
     </div>
-    <div class="banner">
-      <h2>Why Choose Us?</h2>
-      <p>We provide the best selection of used cars at unbeatable prices.</p>
+
+    <div class="attempts">
+      <h1>Attempts: 0</h1>
     </div>
-  </div>
-  <div class="app">
-    <h1>Used Car Finder</h1>
-    <div class="selectors">
-      <select id="yearSelect">
-        <option value="">Select Year</option>
-      </select>
-      <select id="makeSelect" disabled>
-        <option value="">Select Make</option>
-      </select>
-      <select id="modelSelect" disabled>
-        <option value="">Select Model</option>
-      </select>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">A</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">B</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">A</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">B</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">C</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">C</div>
+        </div>
+      </div>
     </div>
-  </div>
-  <script src="bundle.js"></script>
-</body>
+    
+
+    <div class="win-message-container">
+      <h2 class="win-message">You Won!</h2>
+      <button class="start-over-btn">Start Over!</button>
+    </div>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
 </html>
